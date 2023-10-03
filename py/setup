@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 
-echo 'Dropping old venv'
+echo '🔥 Dropping old .venv'
 rm -rf .venv
 rm -rf profile_office
 
-echo 'Creating venv'
+echo '📪 Creating venv'
 python3 -m venv .venv
 
-echo 'Sourcing the environment'
+echo '📫 Starting the environment'
 source .venv/bin/activate
 
-echo 'Installing requirements'
-pip install -r requirements.txt
+echo '📦 Installing requirements'
+pip install --quiet -r requirements.txt
 
+echo '🐍 Starting IPython'
 ipython profile create office --ipython-dir=.
 ipython --profile=office --ipython-dir=. --TerminalInteractiveShell.confirm_exit=False --TerminalInteractiveShell.autosuggestions_provider=None
 
