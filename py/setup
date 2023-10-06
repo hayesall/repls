@@ -15,5 +15,5 @@ pip install --quiet -r requirements.txt
 
 echo '🐍 Starting IPython'
 ipython profile create office --ipython-dir=.
-ipython --profile=office --ipython-dir=. --TerminalInteractiveShell.confirm_exit=False --TerminalInteractiveShell.autosuggestions_provider=None
-
+cat .config.py >> profile_office/ipython_config.py
+ipython --profile=office --ipython-dir=.
