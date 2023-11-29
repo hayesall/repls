@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+curl -L https://download.racket-lang.org/installers/8.11/racket-8.11-x86_64-linux-cs.sh -o racket.sh
+
+sh racket.sh --unix-style --create-dir --dest ./install
+
+rm -f racket.sh
+
