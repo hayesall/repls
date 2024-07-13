@@ -10,6 +10,7 @@ from rich.table import Table
 
 
 def tabprint(data: list[dict[str, Any]]):
+    """Pretty-print a `list[dict]`, e.g. one from `csv.DictReader`"""
     if len(data) == 0:
         print("Empty table")
         return None
