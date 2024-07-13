@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 source .venv/bin/activate
-ipython --profile=office --ipython-dir=.
+ipython --profile=office --ipython-dir=. -i _globals.py
