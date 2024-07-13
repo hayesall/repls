@@ -1,2 +1,2 @@
-ipython==8.16.1
-rich
+ipython==8.26.0
+rich==13.7.1
